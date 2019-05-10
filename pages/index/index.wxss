@@ -1,0 +1,25 @@
+.post{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 100rpx;
+  border: 1px solid white;
+  margin: 0 auto;
+  width: 50%;
+  border-radius: 20rpx;
+  background: white;
+  color: black;
+  padding: 10rpx 20rpx;
+  text-align: center;
+}
+.person1{
+  width: 100rpx;
+  height: 100rpx;
+  background: white;
+  padding: 20rpx;
+  border-radius: 50%;
+}
+.person{
+  width: 100rpx;
+  height: 100rpx;
+}

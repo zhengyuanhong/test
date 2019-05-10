@@ -1,0 +1,9 @@
+<map style='width:{{width}}px;height:{{height}}px;' show-compass="true" id='map'>
+  <!-- 提交按钮 -->
+  <cover-view class='post'>添加</cover-view>
+  <!-- 个人中心 -->
+  <cover-view class='person1'>
+    <cover-image class='person' src='/images/index/person.png'>个人中心</cover-image>
+  </cover-view>
+
+</map>
