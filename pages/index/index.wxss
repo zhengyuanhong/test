@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.person1 {
+.person {
   width: 66rpx;
   height: 66rpx;
   background: white;
@@ -24,7 +24,15 @@
   bottom: 100rpx;
 }
 
-.person {
+.value {
   width: 66rpx;
   height: 66rpx;
+}
+
+.box{
+  position: fixed;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background: red;
 }
