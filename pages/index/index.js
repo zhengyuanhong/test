@@ -1,16 +1,31 @@
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
     width: 0,
-    height: 0
+    height: 0,
+    activeIndex: 1,
+    on_box: true,
   },
+  onView: function(e) {
+    var that = this
+    that.setData({
+      on_box: !that.data.on_box
+    })
+  },
+  onTab: function(e) {
+    console.log(e)
+    var index = e.currentTarget.dataset.index
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
+    this.setData({
+      activeIndex: index
+    })
+  },
+  onCancel: function() {
+    var that = this
+    that.setData({
+      on_box: false
+    })
+  },
   onLoad: function(options) {
     var that = this
     wx.getSystemInfo({
