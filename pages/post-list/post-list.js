@@ -1,34 +1,38 @@
+// pages/post-list/post-list.js
 Page({
 
+  /**
+   * 页面的初始数据
+   */
   data: {
-    width: 0,
-    height: 0,
-
-    on_box: false,
+    activeIndex: 1,
+    list: [{
+      img: '/images/index/person.png',
+      time: '20190413',
+    }, {
+      img: '/images/index/person.png',
+      time: '20190413',
+    }, {
+      img: '/images/index/person.png',
+      time: '20190413',
+    }, {
+      img: '/images/index/person.png',
+      time: '20190413',
+    }]
   },
-  onView: function(e) {
-    var that = this
-    that.setData({
-      on_box: !that.data.on_box
+  onTab: function(e) {
+    console.log(e)
+    var index = e.currentTarget.dataset.index
+
+    this.setData({
+      activeIndex: index
     })
   },
-
-  onCancel: function() {
-    var that = this
-    that.setData({
-      on_box: false
-    })
-  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
   onLoad: function(options) {
-    var that = this
-    wx.getSystemInfo({
-      success: function(res) {
-        that.setData({
-          width: res.windowWidth,
-          height: res.windowHeight
-        })
-      },
-    })
+
   },
 
   /**

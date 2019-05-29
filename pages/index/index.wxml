@@ -1,10 +1,15 @@
 <map style='width:{{width}}px;height:{{height}}px;' show-compass="true" id='map'>
   <!-- 个人中心 -->
-  <cover-view bindtap='onView' class='person'>
+  <cover-view bindtap='onPost' class='person'>
     <cover-image class='value' src='/images/index/person.png'>个人中心</cover-image>
   </cover-view>
 
-  <cover-view class='box {{on_box?"box_out":"box_in"}}'>
+  <cover-view class='more'>
+    <cover-view class='l'>更多</cover-view>
+    <cover-image class='img' src='/images/index/person.png'></cover-image>
+  </cover-view>
+
+  <!-- <cover-view class='box {{on_box?"box_out":"box_in"}}'>
     <cover-view class='tab'>
       <cover-view bindtap='onTab' class='l {{activeIndex==1?"selected":""}}' data-index='1'>行走日记</cover-view>
       <cover-view bindtap='onTab' class='r {{activeIndex==2?"selected":""}}' data-index='2'>个人相册</cover-view>
@@ -19,5 +24,5 @@
     </cover-view>
   </cover-view>
   
-  <cover-view bindtap='onCancel' wx:if='{{on_box}}' class='backg'></cover-view>
+  <cover-view bindtap='onCancel' wx:if='{{on_box}}' class='backg'></cover-view> -->
 </map>

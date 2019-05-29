@@ -1,0 +1,20 @@
+<view class='tab'>
+  <view bindtap='onTab' class='l {{activeIndex==1?"selected":""}}' data-index='1'>行走日记</view>
+  <view bindtap='onTab' class='r {{activeIndex==2?"selected":""}}' data-index='2'>个人相册</view>
+</view>
+
+<view class='content'>
+  <view wx:for='{{list}}' wx:key='{{index}}' class='list'>
+    <view class='title'>
+      <image class='img' src='/images/index/person.png'></image>
+      <view class='name'>zizaiduxong</view>
+    </view>
+    <view class='post_content'>
+      sdfasdfasdfasdf sdfasdfasdfasdf sdfasdfasdfasdf sdfasdfasdfasdf sdfasdfasdfasdf
+    </view>
+    <view class='img_content'>
+      <image src='/images/index/person.png'></image>
+    </view>
+    <view class='time'>20190423</view>
+  </view>
+</view>
