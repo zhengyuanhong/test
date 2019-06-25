@@ -4,7 +4,7 @@
     <cover-image class='value' src='/images/index/person.png'>个人中心</cover-image>
   </cover-view>
 
-  <cover-view class='more'>
+  <cover-view bindtap='onMore' class='more'>
     <cover-view class='l'>更多</cover-view>
     <cover-image class='img' src='/images/index/person.png'></cover-image>
   </cover-view>

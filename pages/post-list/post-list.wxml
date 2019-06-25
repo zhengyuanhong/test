@@ -4,7 +4,7 @@
 </view>
 
 <view class='content'>
-  <view wx:for='{{list}}' wx:key='{{index}}' class='list'>
+  <view wx:for='{{list}}' wx:key='{{index}}' class='list'> 
     <view class='title'>
       <image class='img' src='/images/index/person.png'></image>
       <view class='name'>zizaiduxong</view>

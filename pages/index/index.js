@@ -6,6 +6,11 @@ Page({
 
     on_box: false,
   },
+  onMore:function(){
+    wx.navigateTo({
+      url: '/pages/post-list/post-list',
+    })
+  },
   onView: function(e) {
     var that = this
     that.setData({
